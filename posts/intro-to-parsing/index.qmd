@@ -1,0 +1,27 @@
+---
+title: "Math is hard: An introduction to parsing"
+subtitle: "Chekhov Sharing S03E03"
+date: "2023-12-28"
+categories: [compiler design, parsing]
+image: "image.jpg"
+---
+
+This is a post with executable code.
+
+```{python}
+#| label: fig-polar
+#| fig-cap: "A line plot on a polar axis"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(
+  subplot_kw = {'projection': 'polar'} 
+)
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
