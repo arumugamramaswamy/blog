@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Arumugam Ramaswamy",
     "section": "",
-    "text": "Math is hard: An introduction to parsing\n\n\nChekhov Sharing S03E03\n\n\n\n\ncompiler design\n\n\nparsing\n\n\n\n\n\n\n\n\n\n\n\nDec 28, 1\n\n\n\n\n\n\nNo matching items"
+    "text": "Math is hard: An introduction to parsing\n\n\nChekhov Sharing S03E03\n\n\n\n\ncompiler design\n\n\nparsing\n\n\n\n\n\n\n\n\n\n\n\nDec 28, 2023\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -32,6 +32,6 @@
     "href": "posts/intro-to-parsing/index.html",
     "title": "Math is hard: An introduction to parsing",
     "section": "",
-    "text": "This is a post with executable code."
+    "text": "This is a post with executable code.\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\nFigure 1: A line plot on a polar axis"
   }
 ]
