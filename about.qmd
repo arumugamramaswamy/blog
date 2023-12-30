@@ -16,21 +16,16 @@ about:
 
 :::{#hero-heading}
 
-Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana.
+Hi! I'm Arumugam Ramaswamy - Aru for short. I'm currently a Robotics software engineer at Eureka Robotics. When not building things that intrigue me, you can find me at a bouldering gym trying really hard to send my project.
 
 ## Education
 
-University of California, San Diego | San Diego, CA
-PhD in Mathematics | Sept 2011 - June 2015
-
-Macalester College | St. Paul MA
-B.A in Economics | Sept 2007 - June 2011
+Nanyang Technological University, Singapore
+B.Eng. in Computer Science | August 2018 - Dec 2022
 
 ## Experience
 
-Wengo Analytics | Head Data Scientist | April 2018 - present
-
-GeoScynce | Chief Analyst | Sept 2012 - April 2018
+Eureka Robotics | Robotics Software Engineer | Dec 2022 - present
 
 :::
 
