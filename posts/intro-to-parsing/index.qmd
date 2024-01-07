@@ -1,27 +1,60 @@
 ---
 title: "Math is hard: An introduction to parsing"
 subtitle: "Chekhov Sharing S03E03"
+author: Arumugam Ramaswamy
 date: "2023-12-28"
 categories: [compiler design, parsing]
 image: "image.jpg"
 ---
 
-This is a post with executable code.
+# Math is Hard
 
-```{python}
-#| label: fig-polar
-#| fig-cap: "A line plot on a polar axis"
+I've spent about 15 years of my life learning math, and I like to think that I'm pretty good at it. The math I learnt got progressively harder, starting from addition, subtraction, multiplication, and division when I was a 4 years old, all the way to differential equations in University. But when I say math is hard, I don't mean ![Navier-Stokes equation](./navier-stokes.jpg)
 
-import numpy as np
-import matplotlib.pyplot as plt
+I'm talking about something you probably learnt when you were in kindergarten.
 
-r = np.arange(0, 2, 0.01)
-theta = 2 * np.pi * r
-fig, ax = plt.subplots(
-  subplot_kw = {'projection': 'polar'} 
-)
-ax.plot(theta, r)
-ax.set_rticks([0.5, 1, 1.5, 2])
-ax.grid(True)
-plt.show()
-```
+- 1 + 1
+- 1 - 1
+- 1 - 1 - 1
+- 2 * 2
+- 2 / 2 * 2
+- 2 * 2 / 2
+- 2 / 2 / 2 / 2
+
+## Let's solve these problems
+ 
+- 1 + 1 = 2
+- 1 - 1 = 0
+- 1 - 1 - 1 = -1
+- 2 * 2 = 4
+- 2 / 2 * 2 = 2
+- 2 * 2 / 2 = 2
+- 2 / 2 / 2 / 2 = 1 / 4
+
+Well that wasn't too hard was it? All it takes to solve these problems is understanding how to use the basic mathematical operations and additionally to understand BODMAS.
+
+
+:::{.callout-important}
+BODMAS
+
+- Brackets
+- Order
+- Division
+- Multiplication
+- Addition
+- Subtraction
+:::
+
+## Does this mean I'm a liar?
+I would like to believe that I'm an honest person, and I'm not lying when I say solving problems like `1 - 1 - 1` is hard. Imagine writing code that when given the text `1 - 1 - 1`, figures out which substrings are numbers, which of them are operators, and more importantly evaluates the value of the provided expression.
+
+More generally, given an expression with variables (x, y, z, etc), operators (-, +, *, /), and numbers, the code must be able to understand what are the variables and when provided values for the variables, the code will evaluate the expression. This is not so easy and it quickly becomes a problem in compiler design...
+
+This brings us to the topic of this article: **Parsing**
+
+# An intro to parsing
+
+## Goal
+**Develop a context free grammar (CFG) to handle (not so) simple math operations**
+
+## But first, what is a CFG?
